@@ -59,6 +59,20 @@ a {
   border-radius: 5px;
 }
 
+@media (min-width: 650px) {
+  .card {
+    margin: 1rem 1rem;
+    padding: 3rem 1rem 3rem 1rem;
+  }
+}
+
+@media (min-width: 850px) {
+  .card {
+    margin: 1rem 1rem;
+    padding: 3rem 5rem 3rem 5rem;
+  }
+}
+
 header {
   padding: 0 5rem;
   width: 100%;
@@ -198,6 +212,22 @@ nav li {
     float: left;
     padding: 0;
     width: 40%;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

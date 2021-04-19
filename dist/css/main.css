@@ -181,6 +181,45 @@ nav li {
   margin: 2rem;
 }
 
+#features {
+  padding: 15rem 5rem 5rem 5rem;
+  text-align: center;
+}
+
+#features h2 {
+  margin: 2rem;
+  text-align: center;
+}
+
+#features ol {
+  margin: 1.5rem 3.5rem;
+}
+
+#features ol {
+  margin: 1.5rem 3.5rem;
+}
+
+#features ol > li {
+  margin-bottom: 1.5rem;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#features h3::before {
+  content: "";
+  font-family: FontAwesome;
+  color: #5d63ed;
+  display: inline-block;
+  margin-left: -2em;
+  width: 2em;
+}
+
 @media (min-width: 650px) {
   header {
     -ms-flex-wrap: nowrap;

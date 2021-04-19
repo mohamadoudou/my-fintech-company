@@ -21,6 +21,26 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  background-color: #5d63ed;
+  padding: 1.7rem 2.5rem;
+  margin: 1.5rem 0;
+  height: 5rem;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: #2f1e84;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
 header {
   padding: 0 5rem;
   width: 100%;
@@ -98,6 +118,32 @@ nav li {
   nav ul {
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+}
+
+#hero {
+  /*background-color: #4a4fbd;*/
+  background: linear-gradient(135deg, #2f1e84 0%, #5d63ed 100%);
+  color: #fff;
+  height: 450px;
+  margin: 5rem 0;
+  padding: 5rem;
+}
+
+.image-div {
+  width: 100%;
+}
+
+#hero-img {
+  margin: 0.5rem !important;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+@media (min-width: 650px) {
+  #hero {
+    margin-top: 120px;
+    height: 900px;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -89,4 +89,15 @@ nav > ul {
 nav li {
   padding: 0px 10px 0px 10px;
 }
+
+@media (min-width: 650px) {
+  header {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  nav ul {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
 /*# sourceMappingURL=main.css.map */

@@ -46,3 +46,16 @@ nav > ul {
 nav li {
       padding: 0px 10px 0px 10px;
 }
+
+// header design for desktop
+
+@media (min-width: 650px) {
+    header {
+        flex-wrap: nowrap;
+    } 
+    nav {
+        ul{
+            align-self:flex-end;
+        }
+    } 
+}

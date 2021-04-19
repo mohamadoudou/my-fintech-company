@@ -47,6 +47,49 @@ nav li {
       padding: 0px 10px 0px 10px;
 }
 
+
+
+// hero
+
+#hero {
+    /*background-color: #4a4fbd;*/
+    background:linear-gradient(135deg, #2f1e84 0%,#5d63ed 100% );
+    color: #fff;
+    width: 100%;
+    height: 550px;
+    margin: 5rem 0;
+    padding: 5rem;
+  }
+#hero-img {
+    //margin: 1rem !important;
+    text-align: center;
+}
+  
+// why section container
+
+#why{
+    margin-top: 17rem;
+    h2{
+        text-align: center;
+    }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:2rem
+}
+
+//   @media (max-width: 1000px) {
+//     #hero {
+//       height: 750px;
+//       margin-bottom: 2rem;
+//     }
+//   }
+  
+
 // header design for desktop
 
 @media (min-width: 650px) {
@@ -60,29 +103,6 @@ nav li {
     } 
 }
 
-// hero
-
-#hero {
-    /*background-color: #4a4fbd;*/
-    background:linear-gradient(135deg, #2f1e84 0%,#5d63ed 100% );
-    color: #fff;
-    width: 100%;
-    height: 450px;
-    margin: 5rem 0;
-    padding: 5rem;
-  }
-#hero-img {
-    //margin: 1rem !important;
-    text-align: center;
-}
-  
-//   @media (max-width: 1000px) {
-//     #hero {
-//       height: 750px;
-//       margin-bottom: 2rem;
-//     }
-//   }
-  
   @media (min-width: 650px) {
     #hero {
       margin-top: 120px;
@@ -95,7 +115,7 @@ nav li {
         margin-left: -4rem;
     }
 
-      //hero desktop layout
+      //hero desktop tablet layout 
     .column-60 {
         float: left;
         width: 60%;

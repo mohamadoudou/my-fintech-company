@@ -41,6 +41,24 @@ a {
   transition: background-color 1s;
 }
 
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: 1rem 0rem;
+  padding: 3rem 2rem 3rem 2rem;
+  border: 1px solid rgba(55, 56, 58, 0.1);
+  border-radius: 5px;
+}
+
 header {
   padding: 0 5rem;
   width: 100%;
@@ -110,6 +128,45 @@ nav li {
   padding: 0px 10px 0px 10px;
 }
 
+#hero {
+  /*background-color: #4a4fbd;*/
+  background: linear-gradient(135deg, #2f1e84 0%, #5d63ed 100%);
+  color: #fff;
+  width: 100%;
+  height: 550px;
+  margin: 5rem 0;
+  padding: 5rem;
+}
+
+#hero-img {
+  text-align: center;
+}
+
+#why {
+  margin-top: 17rem;
+}
+
+#why h2 {
+  text-align: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem;
+}
+
 @media (min-width: 650px) {
   header {
     -ms-flex-wrap: nowrap;
@@ -119,20 +176,6 @@ nav li {
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
-}
-
-#hero {
-  /*background-color: #4a4fbd;*/
-  background: linear-gradient(135deg, #2f1e84 0%, #5d63ed 100%);
-  color: #fff;
-  width: 100%;
-  height: 450px;
-  margin: 5rem 0;
-  padding: 5rem;
-}
-
-#hero-img {
-  text-align: center;
 }
 
 @media (min-width: 650px) {

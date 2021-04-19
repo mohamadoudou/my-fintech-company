@@ -17,7 +17,7 @@ body {
 }
 
 a {
-  color: #2f1e84;
+  color: #37383a;
   text-decoration: none;
 }
 
@@ -25,7 +25,7 @@ a {
   text-transform: uppercase;
   font-weight: 600;
   color: #fff;
-  background-color: #5d63ed;
+  background-color: #31d35c;
   padding: 1.7rem 2.5rem;
   margin: 1.5rem 0;
   height: 5rem;
@@ -36,9 +36,9 @@ a {
 }
 
 .btn:hover {
-  background-color: #2f1e84;
-  -webkit-transition: background-color 1s;
-  transition: background-color 1s;
+  background-color: #2d314d;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
 .card {
@@ -57,6 +57,12 @@ a {
   padding: 3rem 2rem 3rem 2rem;
   border: 1px solid rgba(55, 56, 58, 0.1);
   border-radius: 5px;
+}
+
+.grid::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 @media (min-width: 650px) {
@@ -90,7 +96,7 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #fff;
+  background-color: white;
   -webkit-box-shadow: 0 1rem 1rem -1rem rgba(55, 56, 58, 0.2);
           box-shadow: 0 1rem 1rem -1rem rgba(55, 56, 58, 0.2);
 }
@@ -123,9 +129,14 @@ nav {
 
 nav li {
   padding-bottom: 8px;
+  color: #2d314d;
 }
 
-nav > ul {
+nav li a:hover {
+  color: #2d314d !important;
+}
+
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,14 +149,22 @@ nav > ul {
   list-style: none;
 }
 
+.nav-link:hover {
+  color: #31d35c;
+}
+
 nav li {
   padding: 0px 10px 0px 10px;
 }
 
+main {
+  height: 100%;
+}
+
 #hero {
   /*background-color: #4a4fbd;*/
-  background: linear-gradient(135deg, #2f1e84 0%, #5d63ed 100%);
-  color: #fff;
+  background: linear-gradient(135deg, #fafafa 0%, #f3f4f6 100%);
+  color: #37383a;
   width: 100%;
   height: 550px;
   margin: 5rem 0;
@@ -220,6 +239,99 @@ nav li {
   width: 2em;
 }
 
+footer {
+  padding: 2.5rem 5rem;
+  background-color: #f3f4f6;
+  color: #37383a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer-logo {
+  margin: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#footer-info > ul {
+  margin: 15px auto;
+}
+
+#footer-info > ul {
+  list-style: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#footer-info > ul > li {
+  padding-bottom: 10px;
+}
+
+#footer-info > ul > li a {
+  color: #37383a !important;
+}
+
+#footer-info > ul > li {
+  padding: 0 10px;
+}
+
+#footer-info > ul > li > a {
+  color: #fff;
+}
+
+#copyright {
+  margin-top: 1.5rem;
+  padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 420px) {
+  #footer-info > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    list-style: none;
+  }
+}
+
 @media (min-width: 650px) {
   header {
     -ms-flex-wrap: nowrap;
@@ -267,6 +379,12 @@ nav li {
         -ms-flex-align: center;
             align-items: center;
     margin: 2rem;
+  }
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 /*# sourceMappingURL=main.css.map */

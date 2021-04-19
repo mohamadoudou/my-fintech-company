@@ -21,6 +21,12 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #31d35c;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
 .btn {
   text-transform: uppercase;
   font-weight: 600;
@@ -129,11 +135,6 @@ nav {
 
 nav li {
   padding-bottom: 8px;
-  color: #2d314d;
-}
-
-nav li a:hover {
-  color: #2d314d !important;
 }
 
 nav ul {
@@ -149,10 +150,6 @@ nav ul {
   list-style: none;
 }
 
-.nav-link:hover {
-  color: #31d35c;
-}
-
 nav li {
   padding: 0px 10px 0px 10px;
 }
@@ -162,7 +159,6 @@ main {
 }
 
 #hero {
-  /*background-color: #4a4fbd;*/
   background: linear-gradient(135deg, #fafafa 0%, #f3f4f6 100%);
   color: #37383a;
   width: 100%;
@@ -344,6 +340,12 @@ footer {
 }
 
 @media (min-width: 650px) {
+  #nav-bar {
+    margin-right: 5rem;
+  }
+  #nav-bar li {
+    margin: 0rem 3rem;
+  }
   #hero {
     margin-top: 120px;
     height: 600px;

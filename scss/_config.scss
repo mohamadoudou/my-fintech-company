@@ -9,6 +9,9 @@ $lightGrayisBlue: hsl(220, 16%, 96%);
 $veryLightGray: hsl(0, 0%, 98%);
 $white: hsl(0, 0%, 100%);
 $darkGrey:#37383a;
+
+//global settings
+
 * {
     margin: 0;
     padding: 0;
@@ -28,6 +31,10 @@ $darkGrey:#37383a;
   a {
     color:$darkGrey;
     text-decoration: none;
+  }
+  a:hover {
+    color: $limeGreen;
+    transition:color 0.5s;
   }
 
   .btn {
@@ -54,7 +61,6 @@ $darkGrey:#37383a;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    // width: calc(100%  / 3);
     margin: 1rem 0rem;
     padding: 3rem 2rem 3rem 2rem;
     border: 1px solid rgba(55, 56, 58, 0.1);
